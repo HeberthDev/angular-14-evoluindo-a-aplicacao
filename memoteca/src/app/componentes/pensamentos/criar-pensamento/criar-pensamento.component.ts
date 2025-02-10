@@ -33,7 +33,6 @@ export class CriarPensamentoComponent implements OnInit {
   }
 
   public criarPensamento() {
-    console.log('Formulário -> ', this.formulario.status);
     if (this.formulario.valid) {
       this.pensamentoService.criar(this.formulario.value).subscribe(() => {
         this.router.navigate(['/listarPensamento']);
