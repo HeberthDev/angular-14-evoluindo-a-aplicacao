@@ -9,6 +9,8 @@ import { PensamentoService } from '../pensamento.service';
 })
 export class ListarPensamentoComponent implements OnInit {
   public listaPensamentos: Pensamento[] = [];
+  public haMaisPensamentos = true;
+
   private paginaAtual = 1;
 
   constructor(
@@ -19,5 +21,17 @@ export class ListarPensamentoComponent implements OnInit {
     this.pensamentoService.listar(this.paginaAtual).subscribe((listaPensamentos) => {
       this.listaPensamentos = listaPensamentos;
     });
+  }
+
+  public carregarMaisPensamentos(){
+    this.pensamentoService.listar(++this.paginaAtual)
+      .subscribe(listaPensamentos => {
+        this.listaPensamentos.push(...listaPensamentos);
+
+        if (!listaPensamentos.length){
+          this.haMaisPensamentos = false;
+        }
+      }
+    )
   }
 }
