@@ -11,7 +11,8 @@ export class PensamentoComponent implements OnInit {
     id: '',
     conteudo: 'I love Angular',
     autoria: 'Nay',
-    modelo: 'modelo3'
+    modelo: 'modelo3',
+    favorito: false,
   }
 
   constructor() { }
@@ -24,6 +25,14 @@ export class PensamentoComponent implements OnInit {
     }
 
     return 'pensamento-p';
+  }
+
+  public mudarIconeFavorito(): string {
+    if (this.pensamento.favorito == false) {
+      return 'inativo';
+    }
+
+    return 'ativo';
   }
 
 }

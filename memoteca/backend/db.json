@@ -4,49 +4,57 @@
       "id": "1",
       "conteudo": "We are the champions my friends!!!",
       "autoria": "Queen",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": false
     },
     {
       "id": "2",
       "conteudo": "Na minha máquina funciona!",
       "autoria": "Dev da madrugada",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": true
     },
     {
       "id": "3",
       "conteudo": "Continue a codar... Continue a codar...",
       "autoria": "Dory programadora",
-      "modelo": "modelo3"
+      "modelo": "modelo3",
+      "favorito": false
     },
     {
       "id": "ed72",
       "conteudo": "Pensamento de teste",
       "autoria": "Dev Angular",
-      "modelo": "modelo3"
+      "modelo": "modelo3",
+      "favorito": false
     },
     {
       "id": "3f2b",
       "conteudo": "Testando 2",
       "autoria": "Dev Heberth Test",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": false
     },
     {
       "id": "4516",
       "conteudo": "Que a força esteja com você!",
       "autoria": "Mestre Yoda",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": false
     },
     {
       "id": "6c2e",
       "conteudo": "É de laranja, parece limão e tem gosto de tamarino!",
       "autoria": "Chaves",
-      "modelo": "modelo3"
+      "modelo": "modelo3",
+      "favorito": false
     },
     {
       "id": "3340",
       "conteudo": "Liberdade pra dentro da cabeça!",
       "autoria": "Natiruts",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": true
     }
   ]
 }
