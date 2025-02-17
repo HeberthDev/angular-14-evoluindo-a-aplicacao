@@ -10,6 +10,7 @@ import { PensamentoService } from '../pensamento.service';
 export class ListarPensamentoComponent implements OnInit {
   public listaPensamentos: Pensamento[] = [];
   public haMaisPensamentos = true;
+  public filtro = '';
 
   private paginaAtual = 1;
 
